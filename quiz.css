@@ -1,0 +1,155 @@
+/* Genel stiller */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.quiz-title {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.question-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 60px;
+  margin-bottom: 60px;
+}
+
+.question {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1 0 calc(50% - 15px);
+  font-size: 24px;
+}
+
+.option:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.option.correct {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.option.incorrect {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.score {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 60px;
+}
+
+.submit-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 30px 60px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0d8bf0;
+}
+
+/* Navbar stilleri */
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 40px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar h1,
+.navbar h3 {
+  margin: 0;
+}
+
+/* Telefon uyumlu stiller */
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .quiz-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .question {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .options-container {
+    flex-direction: column;
+  }
+
+  .option {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .score {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .submit-btn {
+    padding: 20px 40px;
+    font-size: 24px;
+  }
+}
